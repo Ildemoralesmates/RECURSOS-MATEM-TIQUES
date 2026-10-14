@@ -480,6 +480,7 @@ const FITES = [
       `Els sumeris, i després els babilonis, escrivien amb una canya sobre argila humida. Van adoptar el 60 com a base i van fer una cosa genial: el valor d'una xifra depén de la posició que ocupa (numeració posicional), igual que el 3 de 305 no val el mateix que el de 35.`,
       `Encara hui fem servir la seua base 60: una hora té 60 minuts, un minut 60 segons, i una volta completa 360 graus.`
     ],
+    caveat: `No sabem per què van triar el 60. Sovint es diu que és perquè té molts divisors (1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30), però això és una hipòtesi, no una prova.`,
     problem: `Els babilonis van triar el 60 i no el 10. Escriu tots els divisors de 60 i tots els de 10. Quants en té cada nombre? Per què creus que 60 és tan còmode per a repartir?`,
     solution: `<p>Divisors de 60: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30 i 60, és a dir, 12 divisors. Divisors de 10: 1, 2, 5 i 10, només 4.</p><p>Amb 60 pots partir una hora en meitats, terços, quarts, cinquens i sisens i sempre et surten minuts sencers (un terç d'hora són 20 minuts, un quart són 15). Amb 10 no pots fer un terç sense decimals.</p>`,
     aula: `Divisors i múltiples (1r–2n ESO), mesura del temps i dels angles`
@@ -538,6 +539,7 @@ const FITES = [
       `Euclides va reunir en tretze llibres, els Elements, gairebé tota la matemàtica grega. Parteix d'unes poques definicions i postulats i, pas a pas, demostra la resta. Durant més de 2.000 anys va ser el llibre de text de referència.`,
       `A l'aritmètica ens va deixar dues joies: una demostració que hi ha infinits nombres primers i un mètode, l'algorisme d'Euclides, per trobar el màxim comú divisor de dos nombres.`
     ],
+    caveat: `Sabem molt poc de la vida d'Euclides: ni on va nàixer ni quan va morir. Molts resultats dels Elements ja els havien trobat matemàtics anteriors; el mèrit d'Euclides és l'ordre i l'estructura amb què ho va organitzar tot.`,
     problem: `Vols enrajolar un terra de 252 cm × 105 cm amb rajoles quadrades senceres, sense tallar-ne cap, i el més grans possible. Quin costat han de tindre? Prova el truc d'Euclides: divideix el nombre gran entre el petit, i després el petit entre la resta, i així successivament.`,
     solution: `<p>252 = 2 · 105 + 42; 105 = 2 · 42 + 21; 42 = 2 · 21 + 0. L'últim residu que no és zero és 21, de manera que mcd(252, 105) = 21.</p><p>Les rajoles són de 21 cm de costat: caben 252 : 21 = 12 per un costat i 105 : 21 = 5 per l'altre, és a dir, 60 rajoles.</p>`,
     aula: `Màxim comú divisor i nombres primers (1r–2n ESO)`
@@ -561,6 +563,7 @@ const FITES = [
       `Eratòstenes, director de la Biblioteca d'Alexandria, va saber que al migdia del solstici d'estiu el Sol queda just vertical a Siena: els raigs arriben fins al fons dels pous. El mateix dia, a Alexandria, una vara clavada al terra feia ombra, i els raigs del Sol formaven amb ella un angle d'uns 7,2°, que és 1/50 de volta completa.`,
       `Si la distància entre les dues ciutats era de 5.000 estadis, la circumferència de la Terra havia de ser 50 vegades més: 250.000 estadis. Segons la longitud de l'estadi que s'use, el resultat queda molt prop del real, uns 40.000 km.`
     ],
+    caveat: `El seu càlcul només el coneixem per autors que van escriure segles després, com Cleòmedes. L'estadi no tenia una longitud única, així que no podem saber del cert com d'a prop es va quedar: segons l'estadi que s'use, l'error és xicotet o de diversos percentatges. A més, Siena no estava exactament sobre el tròpic ni a la mateixa longitud que Alexandria. Va ser una aproximació genial, no una mesura perfecta.`,
     problem: `Entre dues ciutats situades al mateix meridià hi ha 800 km. Al migdia, els raigs del Sol formen un angle de 7,2° més amb la vertical en una que en l'altra. Quantes vegades cap 7,2° en una volta completa de 360°? Quant mesura la circumferència de la Terra?`,
     solution: `<p>360 : 7,2 = 50, així que la volta completa és 50 vegades l'angle.</p><p>Circumferència = 50 · 800 km = 40.000 km. És pràcticament el valor que mesuren avui els satèl·lits.</p>`,
     aula: `Proporcionalitat directa i angles (2n ESO)`
@@ -596,7 +599,7 @@ const FITES = [
       `Molts pobles deixaven un buit per marcar «ací no hi ha unitats», però encara no era un nombre. El manuscrit indi de Bakhshali ja escriu un punt com a zero. L'any 628, Brahmagupta va fer el pas decisiu: va donar regles per sumar, restar i multiplicar amb el zero, i també amb els deutes (els negatius).`,
       `Amb el zero, la numeració posicional amb deu xifres (0–9) va quedar completa. Aquest és el nostre sistema decimal.`
     ],
-    caveat: `«Qui va inventar el zero?» és una pregunta mal plantejada. Els babilonis i els maies també van usar un signe per al buit, de manera independent. Va ser un procés llarg i amb molts protagonistes.`,
+    caveat: `«Qui va inventar el zero?» és una pregunta mal plantejada. Els babilonis i els maies també van usar un signe per al buit, de manera independent. Va ser un procés llarg i amb molts protagonistes. A més, la data del manuscrit de Bakhshali es discuteix: una datació amb carboni-14 el situa als segles III–IV, però alguns especialistes en dubten, i el punt s'hi usa més com a marcador de posició que com a nombre amb regles pròpies.`,
     problem: `Imagina que els nombres no tenen zero. Com distingiries 35, 305 i 3.050 amb les xifres 3 i 5 i alguns espais? Quin valor té el 3 en cadascun?`,
     solution: `<p>Sense zero, 35 i 3 5 es podrien confondre. El zero ocupa el lloc buit i ho resol: en 35, el 3 val 30; en 305, val 300; en 3.050, val 3.000.</p><p>El zero també és necessari com a nombre: per a 7 − 7 = 0 i per a ordenar els enters …, −2, −1, 0, 1, 2…</p>`,
     aula: `Sistema de numeració decimal (1r ESO)`
@@ -619,6 +622,7 @@ const FITES = [
       `Leonardo de Pisa, anomenat Fibonacci, va créixer a Bugia (Algèria) i hi va aprendre a calcular amb les xifres 0–9. En 1202 va publicar el Liber Abaci, un llibre per a comerciants que explicava com operar amb aquestes xifres, molt més pràctiques que els números romans.`,
       `Entre els seus problemes hi havia el dels conills, que genera una successió famosa: 1, 1, 2, 3, 5, 8, 13… on cada terme és la suma dels dos anteriors.`
     ],
+    caveat: `Fibonacci no va inventar la successió: ja la coneixien matemàtics de l'Índia segles abans, quan estudiaven els ritmes de la poesia sànscrita. El nom «nombres de Fibonacci» se li va posar al segle XIX.`,
     fun: `Si dividixes cada terme entre l'anterior (8/5, 13/8, 21/13…), el quocient s'acosta a 1,618…, el nombre d'or.`,
     problem: `Comences amb una parella adulta de conills. Cada mes, cada parella adulta té una parella de cries, i les cries es fan adultes al cap d'un mes. Quantes parelles hi ha al final de cada mes durant els sis primers mesos? Troba la regla i continua fins al mes 12.`,
     solution: `<p>Mes 1: 2 parelles; mes 2: 3; mes 3: 5; mes 4: 8; mes 5: 13; mes 6: 21. Cada mes és la suma dels dos mesos anteriors.</p><p>Continuant: mes 7: 34; mes 8: 55; mes 9: 89; mes 10: 144; mes 11: 233; mes 12: 377 parelles.</p>`,
@@ -631,6 +635,7 @@ const FITES = [
       `Fins al segle XVI els càlculs amb parts d'una unitat es feien amb fraccions, i eren feixucs. En 1585 el flamenc Simon Stevin va publicar La Disme, un llibret on proposava escriure les parts d'una unitat en base 10, com fem hui (3,141).`,
       `Stevin pensava en comerciants, enginyers i recaptadors d'impostos. Amb els decimals, sumar i comparar mesures i diners va ser molt més fàcil.`
     ],
+    caveat: `Stevin no va ser el primer a usar decimals: matemàtics àrabs com al-Uqlidisi (segle X) i al-Kashi (segle XV) ja ho feien. El seu mèrit va ser defensar-los per a l'ús pràctic. A més, la seua notació era diferent de la nostra (escrivia cada xifra amb un número dins d'un cercle); la coma o el punt decimal van arribar un poc després.`,
     problem: `Escriu 3/8, 1/3 i 1/6 com a decimals fent la divisió. Quins s'acaben i quins es repeteixen? Per què creus que passa?`,
     solution: `<p>3/8 = 0,375, que s'acaba. 1/3 = 0,333…, periòdic pur. 1/6 = 0,1666…, periòdic mixt.</p><p>Una fracció irreductible dona un decimal exacte només si el denominador no té altres factors primers que 2 i 5. 8 = 2³ sí que ho compleix. 3 i 6 = 2 · 3 tenen el factor 3, i per això els decimals es repeteixen.</p>`,
     aula: `Fraccions i decimals (1r–2n ESO)`
@@ -654,6 +659,7 @@ const FITES = [
       `El cavaller de Méré, un gran aficionat al joc, va plantejar a Pascal un problema: dos jugadors han d'interrompre una partida abans d'acabar. Com s'han de repartir els diners apostats?`,
       `Pascal i Fermat van discutir el problema per carta durant l'estiu de 1654. Van resoldre una cosa nova: calcular la probabilitat que passe alguna cosa abans que passe. Va nàixer el càlcul de probabilitats. Huygens ho va publicar en un llibre poc després, el 1657.`
     ],
+    caveat: `El problema de repartir una partida interrompuda no era nou: ja apareixia en llibres italians del segle XV, i Cardano havia estudiat jocs d'atzar abans. El mèrit de 1654 és el mètode amb què Pascal i Fermat el van resoldre.`,
     problem: `Ana i Biel aposten 10 € cadascun a cara o creu: qui guanye primer 3 tirades s'ho queda tot (20 €). Han fet 2 tirades: Ana en porta 2 i Biel 1. Han d'interrompre la partida. Com han de repartir-se els 20 €?`,
     solution: `<p>A Ana li falta guanyar 1 tirada més, i a Biel, 2. Imagina que juguen 2 tirades més. Els resultats possibles són: AA, AB, BA i BB (A = guanya Ana, B = guanya Biel).</p><p>Ana guanya la partida en AA, AB i BA, és a dir, 3 de 4 casos (3/4). Biel només guanya amb BB (1/4). Repartiment just: Ana 15 € i Biel 5 €.</p>`,
     aula: `Probabilitat (2n–3r ESO)`
@@ -688,6 +694,7 @@ const FITES = [
       `En 1936, Alan Turing va definir matemàticament què és «calcular» amb una màquina imaginària, la màquina de Turing, i va demostrar que hi ha problemes que cap programa no podrà resoldre mai.`,
       `Els ordinadors guarden la informació en binari, només amb zeros i uns. La numeració posicional dels babilonis i el zero de l'Índia tornen a aparéixer ací, ara en base 2. Fins i tot la paraula «algorisme» ens porta a Al-Khwarizmi.`
     ],
+    caveat: `Els historiadors discuteixen quant va ser idea d'Ada i quant de Babbage, que ja havia escrit programes xicotets abans. Dir que és «la primera programadora» és una simplificació còmoda, no un consens. El que sí és segur és que va publicar les notes amb aquest programa i que va veure que la màquina podria tractar qualsevol cosa que es puga representar amb nombres, no només calcular.`,
     problem: `Els ordinadors només tenen dos dígits, 0 i 1. En base 2, cada xifra val el doble que la seua veïna de la dreta: …, 8, 4, 2, 1. Escriu 13 en binari i digues quin nombre és 10110.`,
     solution: `<p>13 = 8 + 4 + 1, així que en binari és 1101 (un 8, un 4, cap 2 i un 1).</p><p>10110 = 1 · 16 + 0 · 8 + 1 · 4 + 1 · 2 + 0 · 1 = 22.</p>`,
     aula: `Sistemes de numeració i pensament computacional`
