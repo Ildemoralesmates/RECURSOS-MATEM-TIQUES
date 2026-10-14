@@ -38,11 +38,11 @@
   .stage { display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:center; gap:26px; }
   .panel { background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px 18px 20px; }
   .panel h2 { font-size:13px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); margin:0 0 12px; text-align:center; font-weight:600; }
-  svg { display:block; }
+  svg { display:block; max-width:100%; height:auto; }
 
-  .side { display:flex; flex-direction:column; gap:14px; min-width:260px; max-width:300px; }
+  .side { display:flex; flex-direction:column; gap:14px; min-width:min(260px,100%); max-width:300px; }
 
-  .mtx-inputs { display:grid; grid-template-columns:1fr 1fr; gap:8px 14px; justify-content:center; margin: 0 auto; width: fit-content;}
+  .mtx-inputs { display:grid; grid-template-columns:1fr; gap:8px 14px; justify-content:center; margin: 0 auto; width: fit-content; max-width:100%;}
   .mtx-inputs .cell { display:flex; align-items:center; gap:6px; }
   .mtx-inputs label { font-size:12px; color:var(--muted); width:16px; }
   .mtx-inputs input[type="range"] { width: 110px; }
@@ -61,6 +61,20 @@
 
   @media (max-width:640px) { .stage { gap:14px; } }
 </style>
+<meta name="description" content="Visualitza com una matriu deforma l&#x27;espai i descobreix els autovectors i autovalors.">
+<link rel="canonical" href="https://ildemoralesmates.github.io/RECURSOS-MATEM-TIQUES/autovectors/">
+<meta name="author" content="Ilde">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ca">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ca_ES">
+<meta property="og:site_name" content="Recursos de matemàtiques">
+<meta property="og:title" content="Transformacions lineals i autovectors">
+<meta property="og:description" content="Visualitza com una matriu deforma l&#x27;espai i descobreix els autovectors i autovalors.">
+<meta property="og:url" content="https://ildemoralesmates.github.io/RECURSOS-MATEM-TIQUES/autovectors/">
+<meta property="og:image" content="https://ildemoralesmates.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 
@@ -268,5 +282,6 @@
   draw();
 })();
 </script>
+<footer data-cc style="margin:2.5rem auto 1.5rem;padding:0 16px;max-width:60rem;text-align:center;font:12.5px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif;opacity:.7;color:inherit">© Ilde · <a href="https://ildemoralesmates.github.io/" style="color:inherit">Recursos de matemàtiques</a> · <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ca" style="color:inherit">CC BY-SA 4.0</a> · Les imatges i materials de tercers conserven la seua pròpia llicència.</footer>
 </body>
 </html>
